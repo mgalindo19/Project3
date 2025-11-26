@@ -19,16 +19,20 @@
 function myMap() {
   var mapProp = {
     center: { lat: 41.8349, lng: -87.6270 }, // Center on IIT
-    zoom: 10
+    zoom: 10 // Zoom level 
   };
 
   var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-  // ✅ Chicago Marker (correct place)
+
   new google.maps.Marker({
-    position: { lat: 41.8781, lng: -87.6298 }, // Chicago
+    position: { lat: 41.8781, lng: -87.6298 }, 
     map: map,
-    title: "Chicago"
+    title: "Chicago",
+    icon: {
+      url: "images/cat.JPG",   
+      scaledSize: new google.maps.Size(50, 50) 
+    }
   });
 }
 </script>
