@@ -1,0 +1,143 @@
+/* Import font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+:root {
+  --nav-bg: #d42626;
+  --primary: #d72631;
+  --accent: #093f68;
+  --text: #f4f4f4;
+  --body-font: 'Roboto', Arial, sans-serif;
+  --heading-font: 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  color: var(--accent);
+  text-align: center; 
+  background: linear-gradient(135deg, #e6f7ff 0%, #b3d9ff 100%); 
+  min-height: 100vh;
+}
+
+nav ul {
+  list-style: none; 
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em 0;
+  margin: 0;
+  background: var(--nav-bg);
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5em 1.2em;
+  border-radius: 0.5em;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: var(--primary);
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  text-align: center;
+  color: var(--primary);
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+
+section, .main-content {
+  margin: 2em auto;
+  max-width: 50em;
+  padding: 2em;
+  background: #fff;
+  box-shadow: 0 0 0.5em #8882;
+  border-radius: 1em;
+}
+
+/* Fluid layout */
+.fluid-layout {
+  width: 85vw;
+  max-width: 65em;
+  margin: auto;
+}
+
+/* Fixed layout */
+.fixed-layout {
+  width: 900px;
+  margin: auto;
+  max-width: 97vw;
+}
+
+
+img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em #2222;
+}
+
+
+iframe {
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
+  border: 0;
+  border-radius: 1em;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+  section, .main-content {
+    padding: 1em;
+  }
+  nav ul {
+    gap: 1em;
+  }
+}
